@@ -1,0 +1,54 @@
+.body{
+
+    margin-left: 10%;
+}
+
+
+.conditions{
+
+    color: var(--Pepolls-light-grey);
+    display: flex;
+    flex-direction: column;
+font-weight:bolder;
+font-size: 10px;
+margin-top: 40px;
+
+}
+
+.verify{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--Pepolls-dark-blue);
+object-fit: contain;
+
+}
+
+.security{
+    color: var(--Pepolls-light-grey);
+font-weight:bolder;
+font-size: 10px;
+margin-top: 25%;
+}
+
+.phoneverif{
+    color: var(--Pepolls-dark-blue);
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.verif{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.outlined-number{
+    width: 280px;
+
+}
+
+.textfield{
+    margin-bottom: 20px;
+
+}

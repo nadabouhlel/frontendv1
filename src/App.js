@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { React, useEffect, useState } from "react";
+import { Navigate, BrowserRouter, Route, Routes } from "react-router-dom";
+import EditProfile from "./Components/Pages/EditProfile";
+import Login from "./Components/Login";
+import OTP from "./Components/OTP";
+import ProtectedRoute from "./Components/ProtectedRoute";
+import Verify from "./Components/Verify";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Login />} />
+
+        <Route element={<ProtectedRoute />}>
+          <Route exact path="/verify" element={<Verify />} />
+          <Route exact path="/otp" element={<OTP />} />
+          <Route exact path="/editprofile" element={<EditProfile />} />
+
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

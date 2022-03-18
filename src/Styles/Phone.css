@@ -1,0 +1,7 @@
+.phone{
+width: 5%;
+padding: 2%;
+flex-direction: column;
+color: var(--Pepolls-light-grey);
+
+}
